@@ -1,0 +1,377 @@
+:root {
+    --primary-color: #757575;
+    --secondary-color: #212121;
+    --accent: #2196F3;
+    --grid-gap: 30px;
+    --grid-raw-elements: 3;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-color);
+}
+
+ul,
+p,
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.button {
+    font: inherit;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.container {
+    display: inherit;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/* Header */
+
+.page-header {
+    display: flex;
+    border-bottom: 2px solid #ECECEC;
+}
+
+.page-header .container {
+    align-items: center;
+}
+.logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em; 
+    color: black;
+}
+
+.page-header .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.pages {
+    margin-left: 93px;
+}
+
+.contacts {
+    margin-left: auto;
+}
+
+.pages,
+.contacts {
+    display: flex;
+}
+
+.pages .item + .item,
+.contacts .item + .item {
+    margin-left: 50px;
+}
+
+.pages .link,
+.contacts .link {
+    display: block  ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.pages .link {
+    color: var(--secondary-color);
+}
+
+.pages .link.current {
+    color: var(--accent);
+}
+
+.contacts .link {
+    color: var(--primary-color);
+}
+
+.pages .link:hover,
+.pages .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.address .link:hover,
+.address .link:focus {
+    color: var(--accent);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/* Studio content */
+
+/* Hat */
+.hat {
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    background-color: #2F303A;
+}
+
+.hat-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hat-button {
+    margin-top: 30px;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--accent);
+    border-radius: 4px;
+}
+
+.hat-button:hover,
+.hat-button:focus {
+    background-color: #188CE8;
+}
+
+/* Features */
+
+.features-section {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.features-list {
+    display: flex;
+}
+
+.features-list .item {
+    width: calc( (100% - 90)/ 4 );
+}
+
+.features-list .item + .item {
+    margin-left: 30px;
+}
+
+
+.features-title,
+.projects-title {
+    display: none;
+}
+
+.features-list-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+/* Business */
+
+.business-section {
+    padding-top: 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+
+.business-list {
+    display: flex;
+}
+
+.business-list .item + .item {
+    margin-left: 30px;
+}
+
+/* Team */
+
+.team-section {
+    background-color: #F5F4FA;
+}
+
+.team.list {
+    display: flex;
+}
+
+.team .item {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.team .item + .item {
+    margin-left: 30px;
+}
+
+.team-name {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.team-position {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-content {
+    padding: 30px;
+}
+
+/* Footer */
+
+footer {
+    padding: 60px 15px;
+    background-color: #2F303A;
+}
+
+footer .logo {
+    color: #FFFFFF;
+}
+
+.address {
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.address .item + .item {
+    margin-top: 9px;
+}
+
+.address .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* _______________________Portfolio____________________ */
+
+.filter-title {
+    display: none;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-list .item + .item {
+    margin-left: 8px;
+}
+
+.filter-list .button {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    color: var(--secondary-color);
+}
+
+.filter-list .button.active,
+.filter-list .button:hover,
+.filter-list .button:focus {
+    color: #FFFFFF;
+    background-color: var(--accent);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Projects */
+
+.projects-wrap {
+    margin-top: 50px;
+}
+
+.projects {
+    display: flex;
+    width: 100%;
+    margin-top: calc(-1*var(--grid-gap));
+    margin-left: calc(-1*var(--grid-gap));
+    flex-wrap: wrap;
+}
+
+.projects-pic {
+    display: block;
+    width: 100%;
+}
+
+.projects > .item {
+    display: block;
+    flex-basis: calc(100%/var(--grid-raw-elements) - var(--grid-gap));
+    margin-top: var(--grid-gap);
+    margin-left: var(--grid-gap);
+}
+
+.projects .projects-company {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-color); 
+}
+
+.projects .projects-type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+}
+
+.projects-content {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+}
+
+.projects-content p {
+    margin-top: 4px;
+}
