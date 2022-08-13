@@ -124,6 +124,20 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--accent);
 }
 
+.contacts * {
+    /* outline: 1px solid red; */
+}
+
+.ico-email, .ico-tel {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.email:hover .ico-email,
+.tel:hover .ico-tel {
+    fill: var(--accent);
+}
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -185,6 +199,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 30px;
 }
 
+.features-thumb {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+.ico-features {
+    margin: 0 auto;
+}
 
 .features-title,
 .projects-title {
@@ -192,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features-list-title {
+    margin-top: 30px;
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
@@ -233,14 +260,14 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
 }
 
-.team .item {
+.team > .item {
     background-color: #FFFFFF;
     border-radius: 4px;
     overflow: hidden;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.team .item + .item {
+.team > .item + .item {
     margin-left: 30px;
 }
 
@@ -263,6 +290,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .team-content {
     padding: 30px;
+}
+
+.socials {
+    display: flex;
+    margin-top: 16px;
+}
+
+.socials-link {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    background-color: grey;
+        border-radius: 50%;
+    
+}
+
+.ico-socials {
+    width: 20px;
+    height: 20px;
+    fill: white;
 }
 
 /* Footer */
