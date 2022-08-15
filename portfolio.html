@@ -23,37 +23,55 @@
 
   <body>
     <!-- Header -->
-    <header class="page-header">
-      <div class="container">
-        <a href="./" class="logo link"><span class="accent">Web</span>Studio</a>
+        <header class="page-header">
+            <div class="container">
+                <a href="./" class="logo link"
+                    ><span class="accent">Web</span>Studio</a
+                >
 
-        <nav>
-          <ul class="pages list">
-            <li class="item"><a class="link" href="./">Студія</a></li>
-            <li class="item">
-              <a class="link current" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="item"><a class="link" href="">Контакти</a></li>
-          </ul>
-        </nav>
+                <nav>
+                    <ul class="pages list">
+                        <li class="item">
+                            <a class="link" href="./">Студія</a>
+                        </li>
+                        <li class="item">
+                            <a class="link current" href="./portfolio.html"
+                                >Портфоліо</a
+                            >
+                        </li>
+                        <li class="item">
+                            <a class="link" href="">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <ul class="contacts list">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+                <ul class="contacts list">
+                    <li class="item">
+                        <a class="link email" href="mailto:info@devstudio.com">
+                            <svg class="ico-email" width="16" height="12">
+                                <use
+                                    href="./images/sprite.svg#envelope"
+                                ></use></svg
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                    <li class="item">
+                        <a class="link tel" href="tel:+380961111111">
+                            <svg class="ico-tel" width="10" height="16">
+                                <use
+                                    href="./images/sprite.svg#smartphone"
+                                ></use></svg
+                            >+38 096 111 11 11</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
 
     <!-- Main content -->
     <main>
       <section class="section projects-section">
-        <div class="container no-padding">
+        <div class="container">
           <h1 class="projects-title">Проекти</h1>
 
           <!-- Filter -->
@@ -76,7 +94,6 @@
           </ul>
 
           <!-- Projects -->
-          <div class="projects-wrap">
             <ul class="projects list">
               <li class="item">
                 <a href="" class="link">
@@ -105,7 +122,6 @@
                       Постер New Orlean vs Golden Star
                     </h2>
                     <p class="projects-type">Дизайн</p>
-                  </div>
                 </a>
               </li>
               <li class="item">
@@ -213,26 +229,74 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <a href="./" class="logo link"><span class="accent">Web</span>Studio</a>
+        <footer>
+            <div class="container footer">
+                <div class="about">
+                    <a href="./" class="logo link"
+                        ><span class="accent">Web</span>Studio</a
+                    >
 
-        <address class="address">
-          <ul class="list">
-            <li class="item">
-              <p>м. Київ, пр-т Лесі Українки, 26</p>
-            </li>
-            <li class="item">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item">
-              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-    </footer>
+                    <address class="address">
+                        <ul class="list">
+                            <li class="item">
+                                <p>м. Київ, пр-т Лесі Українки, 26</p>
+                            </li>
+                            <li class="item">
+                                <a class="link" href="mailto:info@devstudio.com"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                            <li class="item">
+                                <a class="link" href="tel:+380961111111"
+                                    >+38 096 111 11 11</a
+                                >
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="subscribe">
+                  <h3 class="subscribe-title">Приєднуйтесь</h3>
+                    <ul class="socials list">
+                        <li class="item">
+                            <a class="socials-link" href="">
+                                <svg class="ico-socials">
+                                    <use
+                                        href="./images/sprite.svg#instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="socials-link" href="">
+                                <svg class="ico-socials">
+                                    <use
+                                        href="./images/sprite.svg#twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="socials-link" href="">
+                                <svg class="ico-socials">
+                                    <use
+                                        href="./images/sprite.svg#facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="socials-link" href="">
+                                <svg class="ico-socials">
+                                    <use
+                                        href="./images/sprite.svg#linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
   </body>
 </html>
