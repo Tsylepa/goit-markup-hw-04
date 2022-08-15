@@ -419,7 +419,6 @@ footer .logo {
 .subscribe {
     margin-left: 70px;
     padding-top: 12px;
-    color: #ffffff;
 }
 
 .subscribe-title {
@@ -434,6 +433,7 @@ footer .logo {
 }
 
 .subscribe .socials-link {
+    color: #ffffff;
     background: rgba(255, 255, 255, 0.1);
 }
 
