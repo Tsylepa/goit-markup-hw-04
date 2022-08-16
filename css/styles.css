@@ -4,7 +4,7 @@
     --additional-color: #f5f4fa;
     --contrast-color: #ffffff;
     --contrast-base-color: #2f303a;
-    --icon-color: #afb1b8;
+    --icon-color: #afb1b8;  
     --accent: #2196f3;  
     --grid-gap: 30px;
     --grid-raw-elements: 3;
@@ -217,7 +217,6 @@ img {
 
 .features-thumb {
     display: flex;
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     justify-content: center;
